@@ -9,6 +9,16 @@ public class CT_try008 {
 		int stupac = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj stupac"));
 
 		int[][] matrica = new int[red][stupac];
-	}
+		
 
+		for(int i = 0; i < red; i++) {
+			for(int j = 0; j < stupac; j++){
+				System.out.print(matrica[i][j] + " \t");
+			}
+			System.out.println();
+			
+	}
+	}
 }
+
+
