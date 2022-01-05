@@ -9,11 +9,11 @@ public class Z01 {
 			//Alexandra Abramov
 		
 		System.out.println("Hello");
-		System.out.println("Alexandra Abramov");
+		System.out.println("Josip");
 		
 		System.out.println("-----------------Drugi nacin -------------");
 		
-		System.out.println("Hello \n Alexandra Abramov");
+		System.out.println("Hello \n Josip Balog");
 	}
 
 }
