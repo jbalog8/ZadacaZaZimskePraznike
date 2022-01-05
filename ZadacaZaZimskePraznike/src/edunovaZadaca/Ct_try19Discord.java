@@ -17,15 +17,23 @@ public class Ct_try19Discord {
 		int r2 = n - 1; // kraj reda
 		
 		while(k <= n*m) {
+			if(k>= n*m)
+				break;
 			for(int i = r2; i>= r1; i--) {
 				matrix[i][c2] = k++;
 				}
+			if(k>= n*m)
+				break;
 			for (int j = c2 -1; j >=c1; j--) {
 				matrix[r1][j] = k++;
 			}
+			if(k>= n*m)
+				break;
 			for(int i = r1+1; i <= r2; i++) {
 				matrix[i][c1] = k++;
 			}
+			if(k>= n*m)
+				break;
 			for(int j =c1+1; j<=c2-1; j++) {
 				matrix[r2][j] = k++;
 			}
