@@ -15,15 +15,23 @@ public class Ct_try18 {
 		int c1 = 0, c2 = m - 1, r1 = 0, r2 = n - 1;
 
 		while (k <= n * m) {
+			if(k >= n*m)
+				break;
 			for (int i = c2; i >= c1; i--) {
 				matrica[r1][i] = k++;
 			}
+			if(k>= n*m)
+				break;
 			for (int j = r1 + 1; j <= r2; j++) {
 				matrica[j][c1] = k++;
 			}
+			if(k>=n*m)
+				break;
 			for (int i = c1 + 1; i <= c2; i++) {
 				matrica[r2][i] = k++;
 			}
+			if(k>=n*m)
+				break;
 			for (int j = r2 - 1; j >= r1 + 1; j--) {
 				matrica[j][c2] = k++;
 			}
