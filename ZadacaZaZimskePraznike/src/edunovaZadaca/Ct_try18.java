@@ -12,8 +12,12 @@ public class Ct_try18 {
 		int[][] matrica = new int[n][m];
 
 		int k = 1;
-		int c1 = 0, c2 = m - 1, r1 = 0, r2 = n - 1;
-
+		int c1 = 0; // pocetka stupca
+		int c2 = m - 1; // kraj stupca
+		int r1 = 0; // pocetak reda
+		int r2 = n - 1; // kraj reda
+		
+		
 		while (k <= n * m) {
 			if(k >= n*m)
 				break;
