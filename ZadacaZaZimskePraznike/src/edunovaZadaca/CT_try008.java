@@ -18,33 +18,33 @@ public class CT_try008 {
 		int r2 = red - 1; // kraj reda
 		
 		
-		while(k <= red*stupac) { 						//s desna na lijevo
+		izlaz: while(k <= red*stupac) { 						//s desna na lijevo
 			for(int i = c2; i >= c1; i--) {
 				matrica[r2][i] = k++;
 				
 				if(k > red * stupac) {
-					break;
+					break izlaz;
 					}
 			}
 			for (int i= r2 -1; i >= r1; i--) {				//od dolje prema gore
 				matrica[i][c1] = k++;
 				
 				if(k > red * stupac) {
-					break;
+					break izlaz;
 				}
 			}
 			for(int i = c1 +1; i <= c2; i++) {				//s lijeva na desno
 				matrica[c1][i] =k++ ;
 				
 				if(k > red * stupac) {
-					break;
+					break izlaz;
 				}
 			}
 			for (int i = r1 +1; i < r2; i++) {				//od gore prema dolje
 				matrica[i][c2] = k++;
 				
 				if(k > red * stupac) {
-					break;
+					break izlaz;
 				}
 			}
 			
